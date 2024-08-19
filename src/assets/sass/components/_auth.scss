@@ -1,0 +1,97 @@
+.auth-login {
+  width: 100%;
+  min-height: 100vh;
+  background-color: $sidebar__menu-text-color;
+
+  &__label {
+    width: 100%;
+  }
+
+  &__box {
+    margin-bottom: 30px;
+    @include flexLayout(flex, flex-end, center, 0, row nowrap);
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: 525px;
+
+    &-forgot {
+      padding: 0px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.48px;
+      text-decoration: underline;
+      color: $sidebar__menu-text-color;
+
+      &:hover {
+        opacity: 0.8;
+        color: $sidebar__menu-text-color !important;
+      }
+    }
+
+    &-submit {
+      width: 100%;
+      padding: 32px;
+      @include headingFonts(
+        $sidebar__background-color,
+        18px,
+        600,
+        21.47px,
+        none
+      );
+      background-color: $sidebar__menu-text-color;
+
+      &:hover {
+        background-color: transparent !important;
+        color: $sidebar__menu-text-color !important;
+        border: 1px solid $sidebar__menu-text-color !important;
+      }
+    }
+
+    &-input {
+      font-size: 16px;
+      font-weight: 400;
+      padding: 12px 20px;
+      color: $nurse-color;
+      line-height: 18.83px;
+    }
+
+    &-icon {
+      font-size: 24px;
+      color: $sidebar__menu-text-color;
+
+      &--color {
+        color: red;
+      }
+    }
+  }
+
+  &__background {
+    width: 50%;
+    padding: 80px;
+    margin-left: auto;
+    min-height: inherit;
+    background-color: $sidebar__background-color;
+    @include flexLayout(flex, center, center, 0, column nowrap);
+  }
+
+  &__content {
+    text-align: center;
+    margin-bottom: 60px;
+    &-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: $nurse-color;
+      line-height: 38.69px;
+    }
+
+    &-text {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18.83px;
+      color: $auth__login-text-color;
+    }
+  }
+}

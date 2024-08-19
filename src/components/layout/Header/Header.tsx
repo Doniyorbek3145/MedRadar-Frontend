@@ -2,6 +2,7 @@ const { Header } = Layout;
 import { Badge, Layout } from "antd";
 import { LetterIcon, RingIcon } from "assets/images/svg";
 import { Button, DataPicker, SearchInput, Select } from "components";
+import Account from "./components";
 
 const HeaderComponent = () => {
   return (
@@ -32,7 +33,7 @@ const HeaderComponent = () => {
           </Badge>
         </Button>
         <Select />
-        
+        <Account />
       </div>
     </Header>
   );

@@ -21,6 +21,9 @@ createRoot(document.getElementById("root")!).render(
           Select: {
             colorBorder: "#01A1B7",
           },
+          Checkbox: {
+            colorBgLayout: "red",
+          },
         },
       }}
     >
