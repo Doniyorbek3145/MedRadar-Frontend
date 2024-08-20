@@ -6,6 +6,7 @@ import {
   Loader,
   DataPicker,
   SearchInput,
+  Breadcrumb,
 } from "./common";
 
 export {
@@ -15,6 +16,7 @@ export {
   Loader,
   Header,
   Sidebar,
+  Breadcrumb,
   DataPicker,
   SearchInput,
 };

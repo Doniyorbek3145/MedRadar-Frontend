@@ -1,9 +1,12 @@
 import type { FormProps } from "antd";
 import { ChangeEvent, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button, Checkbox, Form, Input } from "antd";
 import { LockOutlined, CheckCircleOutlined } from "@ant-design/icons";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   type authValueTypes = {
     isUserName: boolean;
     isPassword: boolean;
@@ -62,8 +65,9 @@ const Login = () => {
     remember?: string;
   };
 
-  const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
-    console.log("Success:", values);
+  const onFinish: FormProps<FieldType>["onFinish"] = () => {
+    navigate("/");
+    localStorage.setItem("token", "asdasd");
   };
 
   const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (
@@ -79,7 +83,7 @@ const Login = () => {
         <div className="auth-login__content">
           <h2 className="auth-login__content-title">Kirish</h2>
           <p className="auth-login__content-text">
-            Kirish uchun quyidagiladrni to’ldiring
+            Kirish uchun quyidagilarni to’ldiring
           </p>
         </div>
 

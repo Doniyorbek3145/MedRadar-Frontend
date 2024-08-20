@@ -1,19 +1,24 @@
 const { Content } = Layout;
 import { Layout } from "antd";
-import { Outlet } from "react-router-dom";
 import { Header, Sidebar } from "components";
+import { useEffect } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const LayoutComponent = () => {
+  const navigate = useNavigate();
+  const token = localStorage.getItem("token") || "";
+
+  useEffect(() => {
+    if (!token) navigate("/pages/login");
+  }, []);
+
   return (
     <Layout>
       <Sidebar />
       <Layout>
         <Header />
-        <Content style={{ margin: "24px 16px 0" }}>
-          <div
-            className="site-layout-background"
-            style={{ padding: 24, minHeight: "100vh" }}
-          >
+        <Content>
+          <div style={{ padding: 24, minHeight: "100vh" }}>
             <Outlet />
           </div>
         </Content>
