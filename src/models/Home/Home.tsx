@@ -1,5 +1,6 @@
-import { Card } from "antd";
+import { Card, Checkbox } from "antd";
 import { Breadcrumb } from "components";
+import { Divider, Table } from "antd";
 
 const Home = () => {
   const paths = [
@@ -38,6 +39,160 @@ const Home = () => {
             <h3 className="card-count">45</h3>
           </Card.Grid>
         </Card>
+
+        <table className="table">
+          <thead className="table-head">
+            <tr className="table-rows">
+              {/* <th className="table-th">
+                <Checkbox className="table-checkbox" />
+              </th> */}
+              <th className="table-th">
+                <h2 className="table-th-title">Palatalar</h2>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="table-row">
+              {/* <td>
+                <Checkbox className="table-checkbox" />
+              </td> */}
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      type="button"
+                      className="table__item-btn  table__item-btn--red"
+                    >
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr className="table-row">
+              {/* <td>
+                <Checkbox className="table-checkbox" />
+              </td> */}
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr className="table-row">
+              {/* <td>
+                <Checkbox className="table-checkbox" />
+              </td> */}
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr className="table-row">
+              {/* <td>
+                <Checkbox className="table-checkbox" />
+              </td> */}
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

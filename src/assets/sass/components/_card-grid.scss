@@ -1,6 +1,6 @@
 .ant-card-body {
   padding: 0.9px !important;
-  border: 1px solid $site-color;
+  border: 1.5px solid $site-color;
   border-radius: 10px !important;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .card {
+  margin-bottom: 20px;
   &-title {
     font-size: 14px;
     font-weight: 500;

@@ -1,0 +1,48 @@
+.table {
+  width: 100%;
+  text-align: left;
+  border-radius: 8px 8px 0 0;
+  border: none;
+
+  //   &-checkbox {
+  //     width: 100%;
+  //     margin-right: 25px;
+  //   }
+
+  &-head {
+    background-color: $table__head-color;
+  }
+
+  &-th {
+    padding: 20px;
+  }
+
+  &-td {
+    padding: 20px;
+    border-bottom: 3px solid $table-body-color;
+    background-color: $sidebar__background-color;
+  }
+
+  &__list {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__item {
+    &-btn {
+      border-radius: 4px;
+      padding: 12px 30px;
+      color: $table-body-text-color;
+      border: 1px solid $btn-border-color;
+      background-color: $table-body-background-color;
+
+      &--red {
+        color: $btn-active-text-color;
+        border: 1px solid $btn-active-text-color;
+        background-color: $btn-active-background-color;
+      }
+    }
+  }
+}
