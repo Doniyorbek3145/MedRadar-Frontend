@@ -1,0 +1,42 @@
+.ant-card-body {
+  padding: 0.9px !important;
+  border: 1px solid $site-color;
+  border-radius: 10px !important;
+}
+
+.ant-card-grid {
+  padding: 20px !important;
+}
+
+.ant-card-grid:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.ant-card-grid:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+
+.ant-card-bordered {
+  border: none;
+}
+
+.ant-card {
+  border-radius: 10px !important;
+}
+
+.card {
+  &-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 8px;
+    color: $auth__login-text-color;
+  }
+
+  &-count {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    color: $site-color;
+  }
+}

@@ -1,6 +1,6 @@
 .site-layout-sub-header-background {
   @include flexLayout(flex, space-between, center, 0px, row nowrap);
-  padding: 0 80px;
+  padding: 0 60px 0px 80px;
 }
 
 .search-input {
