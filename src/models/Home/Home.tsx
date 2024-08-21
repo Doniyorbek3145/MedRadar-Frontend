@@ -1,6 +1,6 @@
-import { Card, Checkbox } from "antd";
+import { Card } from "antd";
 import { Breadcrumb } from "components";
-import { Divider, Table } from "antd";
+// import { Divider, Table } from "antd";
 
 const Home = () => {
   const paths = [
