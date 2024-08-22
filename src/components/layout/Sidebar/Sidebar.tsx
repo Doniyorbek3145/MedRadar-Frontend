@@ -1,6 +1,7 @@
 const { Sider } = Layout;
 import { useState } from "react";
 import { Layout, Menu } from "antd";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import {
   RightOutlined,
@@ -9,7 +10,33 @@ import {
 } from "@ant-design/icons";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  type pagesType = {
+    title: string;
+    id: string | number;
+    icon: React.ReactNode;
+  };
+
+  const pages: pagesType[] = [
+    {
+      id: "/",
+      title: "1 - otdeleniya",
+      icon: <PieChartOutlined />,
+    },
+    {
+      id: "/pages/second-room",
+      title: "2 - otdeleniya",
+      icon: <VideoCameraOutlined />,
+    },
+    {
+      id: "/pages/third-room",
+      title: "3 - otdeleniya",
+      icon: <PieChartOutlined />,
+    },
+  ];
 
   return (
     <Sider
@@ -29,16 +56,20 @@ const Sidebar = () => {
         <h1 className="site-title">MedRadar</h1>
         <h2 className="site-sub-title">Bosh shifokor</h2>
       </div>
-      <Menu theme="light" mode="inline" defaultSelectedKeys={["1"]}>
-        <Menu.Item key="1" icon={<PieChartOutlined />}>
-          1 - otdeleniya
-        </Menu.Item>
-        <Menu.Item key="2" icon={<VideoCameraOutlined />}>
-          2 - otdeleniya
-        </Menu.Item>
-        <Menu.Item key="3" icon={<PieChartOutlined />}>
-          3 - otdeleniya
-        </Menu.Item>
+      <Menu
+        theme="light"
+        mode="inline"
+        onClick={(page) => navigate(page.key)}
+        defaultSelectedKeys={[location.pathname]}
+      >
+        {pages.length > 0 &&
+          pages.map((el: pagesType) => {
+            return (
+              <Menu.Item key={el.id} icon={el.icon}>
+                {el.title}
+              </Menu.Item>
+            );
+          })}
       </Menu>
     </Sider>
   );
