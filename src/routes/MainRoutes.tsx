@@ -1,5 +1,5 @@
 import Layout from "Layout";
-import Home from "models/Home";
+import { Home, Error } from "routes/AppRoutes";
 import { ForgotPassword, Login } from "models/Auth";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -21,6 +21,10 @@ const routes = createBrowserRouter([
   {
     element: <ForgotPassword />,
     path: "/pages/forgotpassword",
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ]);
 

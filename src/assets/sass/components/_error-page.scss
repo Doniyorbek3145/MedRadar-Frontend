@@ -1,0 +1,6 @@
+.error {
+  min-height: 100vh;
+  &-page {
+    @include flexLayout(flex, center, center, 0, column nowrap);
+  }
+}
