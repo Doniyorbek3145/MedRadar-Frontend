@@ -1,0 +1,25 @@
+.modal {
+  &-icon {
+    height: 256px;
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    text-align: center;
+    margin-bottom: 78px;
+    &-title {
+      margin-bottom: 12px;
+      @include headingFonts($nurse-color, 32px, 700, 38.69px, none);
+    }
+
+    &-text {
+      @include headingFonts($auth__login-text-color, 16px, 500, 18.83px, none);
+    }
+  }
+
+  &-btn {
+    width: 100%;
+    padding: 32px;
+    @include headingFonts($sidebar__background-color, 18px, 600, 21.47px, none);
+  }
+}

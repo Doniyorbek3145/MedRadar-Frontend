@@ -1,11 +1,13 @@
 import type { FormProps } from "antd";
-import { Button, Form, Input } from "antd";
 import { ChangeEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { SuccessIcon } from "assets/images/svg";
+import { Button, Form, Input, Modal } from "antd";
 import { PhoneOutlined } from "@ant-design/icons";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   type authValueTypes = {
     isPhone: boolean;
@@ -46,7 +48,9 @@ const Login = () => {
     phone: string;
   };
 
-  const onFinish: FormProps<FieldType>["onFinish"] = () => {};
+  const onFinish: FormProps<FieldType>["onFinish"] = () => {
+    setIsOpen(true);
+  };
 
   const onFinishFailed: FormProps<FieldType>["onFinishFailed"] = (
     errorInfo
@@ -54,8 +58,33 @@ const Login = () => {
     console.log("Failed:", errorInfo);
   };
 
+  const successWork = () => {
+    setIsOpen(false);
+
+    setTimeout(() => navigate("/pages/enter-password"), 2000);
+  };
+
   return (
     <section className="auth-login">
+      <Modal className="modal" open={isOpen} footer={false} closeIcon={false}>
+        <img
+          width={392}
+          height={256}
+          src={SuccessIcon}
+          alt="success icon"
+          className="modal-icon"
+        />
+
+        <div className="modal__content">
+          <h2 className="modal__content-title">Parol jo'natildi</h2>
+          <p className="modal__content-text">Parol muvaffaqiyatli jo'natildi</p>
+        </div>
+
+        <Button className="modal-btn" onClick={successWork}>
+          Davom etish
+        </Button>
+      </Modal>
+
       <h1 className="visually-hidden">MedRadar Forgotpassword</h1>
       <div className="auth-login__background">
         <div className="auth-login__content">

@@ -1,7 +1,7 @@
 import Layout from "Layout";
 import { Home, Error } from "routes/AppRoutes";
-import { ForgotPassword, Login } from "models/Auth";
 import { createBrowserRouter } from "react-router-dom";
+import { ForgotPassword, Login, EnterPassword } from "models/Auth";
 
 const routes = createBrowserRouter([
   {
@@ -21,6 +21,10 @@ const routes = createBrowserRouter([
   {
     element: <ForgotPassword />,
     path: "/pages/forgotpassword",
+  },
+  {
+    element: <EnterPassword />,
+    path: "/pages/enter-password",
   },
   {
     path: "*",
