@@ -7,7 +7,7 @@ import { AccountAvatarImage } from "assets/images/png";
 const items: MenuProps["items"] = [
   {
     key: "0",
-    label: <Link to="/pages/login">Login</Link>,
+    label: <Link to="/pages/login">Chiqish</Link>,
   },
 ];
 
