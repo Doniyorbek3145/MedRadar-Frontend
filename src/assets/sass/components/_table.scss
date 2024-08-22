@@ -12,7 +12,13 @@
     padding: 20px;
 
     &-title {
-      @include headingFonts($auth__login-text-color, 14px, 500, 16.48px, none);
+      @include headingFonts(
+        $auth__login-text-color,
+        14px,
+        500,
+        16.48px,
+        uppercase
+      );
     }
   }
 
