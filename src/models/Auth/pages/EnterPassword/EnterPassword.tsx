@@ -8,30 +8,40 @@ import ReactCodeInput, { ReactCodeInputProps } from "react-code-input";
 const EnterPassword = () => {
   const navigate = useNavigate();
   const [second, setSecond] = useState(5);
-  const [isCode, setIsCode] = useState(false);
   const intervalRef = useRef<null | number | any>(null);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+
+  const startTimer = () => {
+    intervalRef.current = setInterval(() => {
+      setSecond((prevSecond) => {
+        if (prevSecond <= 1) {
+          clearInterval(intervalRef.current);
+          setIsVisible(true);
+          return 0;
+        } else {
+          return prevSecond - 1;
+        }
+      });
+    }, 1000);
+  };
+
+  useEffect(() => {
+    startTimer();
+    return () => clearInterval(intervalRef.current);
+  }, []);
+
+  const reSendCode = () => {
+    clearInterval(intervalRef.current!);
+    setSecond(5);
+    setIsVisible(false);
+    startTimer();
+  };
 
   type FieldType = {
     username?: string;
     password?: string;
     remember?: string;
   };
-
-  const startTimer = () => {
-    if (isCode === false && second >= 1) {
-      intervalRef.current = setInterval(() => {
-        setSecond(second - 1);
-      }, 1000);
-    } else {
-      setSecond(0);
-      setIsCode(true);
-      clearInterval(intervalRef.current);
-    }
-  };
-
-  useEffect(() => {
-    startTimer();
-  }, [second]);
 
   const onFinish: FormProps<FieldType>["onFinish"] = () => {
     navigate("/");
@@ -42,12 +52,6 @@ const EnterPassword = () => {
     errorInfo
   ) => {
     console.log("Failed:", errorInfo);
-  };
-
-  const reSendCode = () => {
-    startTimer();
-    setSecond(59);
-    setIsCode(false);
   };
 
   const props: ReactCodeInputProps = {
@@ -117,7 +121,7 @@ const EnterPassword = () => {
                 />
                 <p className="auth-login__time-text">0:{second}</p>
               </span>
-              {isCode && (
+              {isVisible && (
                 <p className="auth-login__box-text">
                   Parolni olmadingizmi?{" "}
                   <span
