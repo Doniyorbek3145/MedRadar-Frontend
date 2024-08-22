@@ -7,7 +7,7 @@ import ReactCodeInput, { ReactCodeInputProps } from "react-code-input";
 
 const EnterPassword = () => {
   const navigate = useNavigate();
-  const [second, setSecond] = useState(5);
+  const [second, setSecond] = useState(59);
   const intervalRef = useRef<null | number | any>(null);
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
@@ -32,7 +32,7 @@ const EnterPassword = () => {
 
   const reSendCode = () => {
     clearInterval(intervalRef.current!);
-    setSecond(5);
+    setSecond(59);
     setIsVisible(false);
     startTimer();
   };

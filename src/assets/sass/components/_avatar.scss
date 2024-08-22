@@ -1,0 +1,28 @@
+.account {
+  margin-bottom: 15px;
+  @include flexLayout(flex, flex-start, center, 5px, row nowrap);
+
+  &__container {
+    @include flexLayout(flex, flex-start, center, 5px, row nowrap);
+  }
+  &__content {
+    text-align: right;
+    &-name {
+      @include headingFonts($nurse-color, 14px, 600, 16.7px, none);
+    }
+
+    &-job {
+      @include headingFonts($auth__login-text-color, 12px, 500, 14.12px, none);
+    }
+  }
+
+  &-avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  &-down-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
