@@ -42,7 +42,7 @@ const Home = () => {
             <h3 className="card-count">200</h3>
           </Card.Grid>
           <Card.Grid hoverable={false} style={gridStyle}>
-            <h2 className="card-title">Patala</h2>
+            <h2 className="card-title">Palata</h2>
             <h3 className="card-count">1 470 000</h3>
           </Card.Grid>
           <Card.Grid hoverable={false} style={gridStyle}>
