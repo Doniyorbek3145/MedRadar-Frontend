@@ -1,17 +1,37 @@
 import { Button, Form } from "antd";
 import type { FormProps } from "antd";
-import { useNavigate } from "react-router-dom";
-import ReactCodeInput, { ReactCodeInputProps } from "react-code-input";
 import { ClockIcon } from "assets/images/svg";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import ReactCodeInput, { ReactCodeInputProps } from "react-code-input";
 
 const EnterPassword = () => {
   const navigate = useNavigate();
+  const [second, setSecond] = useState(5);
+  const [isCode, setIsCode] = useState(false);
+  const intervalRef = useRef<null | number | any>(null);
 
   type FieldType = {
     username?: string;
     password?: string;
     remember?: string;
   };
+
+  const startTimer = () => {
+    if (isCode === false && second >= 1) {
+      intervalRef.current = setInterval(() => {
+        setSecond(second - 1);
+      }, 1000);
+    } else {
+      setSecond(0);
+      setIsCode(true);
+      clearInterval(intervalRef.current);
+    }
+  };
+
+  useEffect(() => {
+    startTimer();
+  }, [second]);
 
   const onFinish: FormProps<FieldType>["onFinish"] = () => {
     navigate("/");
@@ -22,6 +42,12 @@ const EnterPassword = () => {
     errorInfo
   ) => {
     console.log("Failed:", errorInfo);
+  };
+
+  const reSendCode = () => {
+    startTimer();
+    setSecond(59);
+    setIsCode(false);
   };
 
   const props: ReactCodeInputProps = {
@@ -89,14 +115,20 @@ const EnterPassword = () => {
                   src={ClockIcon}
                   className="auth-login__time-icon"
                 />
-                <p className="auth-login__time-text">0:56</p>
+                <p className="auth-login__time-text">0:{second}</p>
               </span>
-              <p className="auth-login__box-text">
-                Parolni olmadingizmi?{" "}
-                <span role="button" className="auth-login__box-span">
-                  Qaytadan jo’natish
-                </span>
-              </p>
+              {isCode && (
+                <p className="auth-login__box-text">
+                  Parolni olmadingizmi?{" "}
+                  <span
+                    role="button"
+                    onClick={reSendCode}
+                    className="auth-login__box-span"
+                  >
+                    Qaytadan jo’natish
+                  </span>
+                </p>
+              )}
             </div>
           </div>
           <Form.Item>

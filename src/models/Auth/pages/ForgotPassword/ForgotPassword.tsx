@@ -114,6 +114,7 @@ const Login = () => {
           >
             <Input
               name="phone"
+              type="number"
               onChange={onChange}
               value={authValue.phone}
               className="auth-login__form-input"

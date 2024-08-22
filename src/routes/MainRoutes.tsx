@@ -1,7 +1,7 @@
 import Layout from "Layout";
 import { createBrowserRouter } from "react-router-dom";
-import { ForgotPassword, Login, EnterPassword } from "models/Auth";
 import { Home, Error, SecondRoom, ThirdRoom } from "routes/AppRoutes";
+import { ForgotPassword, Login, EnterPassword, NewPassword } from "models/Auth";
 
 const routes = createBrowserRouter([
   {
@@ -33,6 +33,10 @@ const routes = createBrowserRouter([
   {
     element: <EnterPassword />,
     path: "/pages/enter-password",
+  },
+  {
+    element: <NewPassword />,
+    path: "/pages/new-password",
   },
   {
     path: "*",
