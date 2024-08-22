@@ -15,7 +15,12 @@
     @include flexLayout(flex, flex-end, center, 20px, row nowrap);
     &-btn {
       font-size: 14px;
-      padding: 25px 50px;
+      padding: 25px 40px;
+      @include flexLayout(flex, space-between, center, 20px, row nowrap);
+    }
+
+    &-icon {
+      font-size: 25px;
     }
   }
 }
