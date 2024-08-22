@@ -1,15 +1,14 @@
 const { Header } = Layout;
+import Account from "./components";
 import { Badge, Layout } from "antd";
 import { LetterIcon, RingIcon } from "assets/images/svg";
-import { Button, DataPicker, SearchInput, Select } from "components";
-import Account from "./components";
+import { Button, DataPicker, Select } from "components";
 
 const HeaderComponent = () => {
   return (
     <Header className="site-layout-sub-header-background">
-      <SearchInput />
+      <DataPicker />
       <div className="header-box">
-        <DataPicker />
         <Button type="text">
           <Badge count={2}>
             <img

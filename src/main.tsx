@@ -13,6 +13,11 @@ createRoot(document.getElementById("root")!).render(
             hoverBorderColor: "#01A1B7",
             activeBorderColor: "#01A1B7",
           },
+          Button: {
+            colorText: "#fff",
+            colorPrimaryHover: "#fff",
+            colorBgContainer: "#01A1B7",
+          },
           DatePicker: {
             colorBorder: "#01A1B7",
             hoverBorderColor: "#01A1B7",

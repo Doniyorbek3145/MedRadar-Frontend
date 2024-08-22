@@ -2,10 +2,20 @@
   &-title {
     font-size: 26px;
     font-weight: 600;
-    margin-bottom: 27px;
     color: $nurse-color;
     line-height: 31.02px;
   }
+
+  &__box {
+    margin-bottom: 30px;
+    @include flexLayout(flex, space-between, center, 0, row nowrap);
+  }
+
+  &__button-group {
+    @include flexLayout(flex, flex-end, center, 20px, row nowrap);
+    &-btn {
+      font-size: 14px;
+      padding: 25px 50px;
+    }
+  }
 }
-
-
