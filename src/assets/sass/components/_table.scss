@@ -1,13 +1,8 @@
 .table {
   width: 100%;
-  text-align: left;
-  border-radius: 8px 8px 0 0;
   border: none;
-
-  //   &-checkbox {
-  //     width: 100%;
-  //     margin-right: 25px;
-  //   }
+  text-align: center;
+  border-radius: 8px 8px 0 0;
 
   &-head {
     background-color: $table__head-color;
@@ -15,6 +10,10 @@
 
   &-th {
     padding: 20px;
+
+    &-title {
+      @include headingFonts($auth__login-text-color, 14px, 500, 16.48px, none);
+    }
   }
 
   &-td {
@@ -25,9 +24,7 @@
 
   &__list {
     gap: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    @include flexLayout(flex, center, center, 30px, column nowrap);
   }
 
   &__item {

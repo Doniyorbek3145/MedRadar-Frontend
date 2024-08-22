@@ -43,11 +43,23 @@ const Home = () => {
         <table className="table">
           <thead className="table-head">
             <tr className="table-rows">
-              {/* <th className="table-th">
-                <Checkbox className="table-checkbox" />
-              </th> */}
               <th className="table-th">
-                <h2 className="table-th-title">Palatalar</h2>
+                <h2 className="table-th-title">1 - Palata</h2>
+              </th>
+              <th className="table-th">
+                <h2 className="table-th-title">2 - Palata</h2>
+              </th>
+              <th className="table-th">
+                <h2 className="table-th-title">3 - Palata</h2>
+              </th>
+              <th className="table-th">
+                <h2 className="table-th-title">4 - Palata</h2>
+              </th>
+              <th className="table-th">
+                <h2 className="table-th-title">5 - Palata</h2>
+              </th>
+              <th className="table-th">
+                <h2 className="table-th-title">6 - Palata</h2>
               </th>
             </tr>
           </thead>
@@ -65,34 +77,132 @@ const Home = () => {
                   </li>
                   <li className="table__item">
                     <button className="table__item-btn" type="button">
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 4
+                    </button>
+                  </li>
+                </ul>
+              </td>
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
                       Kravat 1
                     </button>
                   </li>
                   <li className="table__item">
                     <button
+                      className="table__item-btn table__item-btn--red"
                       type="button"
-                      className="table__item-btn  table__item-btn--red"
+                    >
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 4
+                    </button>
+                  </li>
+                </ul>
+              </td>
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button
+                      className="table__item-btn table__item-btn--red"
+                      type="button"
+                    >
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      className="table__item-btn table__item-btn--red"
+                      type="button"
+                    >
+                      Kravat 4
+                    </button>
+                  </li>
+                </ul>
+              </td>
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      type="button"
+                      className="table__item-btn table__item-btn--red"
+                    >
+                      Kravat 4
+                    </button>
+                  </li>
+                </ul>
+              </td>
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button className="table__item-btn" type="button">
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      type="button"
+                      className="table__item-btn table__item-btn--red"
                     >
                       Kravat 3
                     </button>
                   </li>
                   <li className="table__item">
                     <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
+                      Kravat 4
                     </button>
                   </li>
                 </ul>
               </td>
-            </tr>
-            <tr className="table-row">
-              {/* <td>
-                <Checkbox className="table-checkbox" />
-              </td> */}
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
@@ -102,90 +212,20 @@ const Home = () => {
                   </li>
                   <li className="table__item">
                     <button className="table__item-btn" type="button">
-                      Kravat 1
+                      Kravat 2
                     </button>
                   </li>
                   <li className="table__item">
                     <button className="table__item-btn" type="button">
-                      Kravat 1
+                      Kravat 3
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr className="table-row">
-              {/* <td>
-                <Checkbox className="table-checkbox" />
-              </td> */}
-              <td className="table-td">
-                <ul className="table__list">
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                </ul>
-              </td>
-            </tr>
-            <tr className="table-row">
-              {/* <td>
-                <Checkbox className="table-checkbox" />
-              </td> */}
-              <td className="table-td">
-                <ul className="table__list">
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
+                    <button
+                      type="button"
+                      className="table__item-btn table__item-btn--red"
+                    >
+                      Kravat 4
                     </button>
                   </li>
                 </ul>
