@@ -1,0 +1,17 @@
+.my-code-input {
+  margin: 0px;
+  padding: 0;
+  width: 100% !important;
+  margin-bottom: 26px;
+
+  @include gridLayout(grid !important, 4, space-between, center, 30px);
+
+  input {
+    appearance: none !important;
+    margin: 0px !important;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  }
+}

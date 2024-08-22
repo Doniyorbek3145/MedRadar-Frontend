@@ -140,7 +140,11 @@ const Login = () => {
           </Form.Item>
 
           <div className="auth-login__box">
-            <Button className="auth-login__form-forgot" type="link">
+            <Button
+              onClick={() => navigate("/pages/forgotpassword")}
+              className="auth-login__form-forgot"
+              type="link"
+            >
               Parolni unutdingizmi?
             </Button>
           </div>
