@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, Modal, DatePicker, Select } from "antd";
 import { useNavigate } from "react-router-dom";
-import { Breadcrumb, Button, Input } from "components";
+import { Button, Input } from "components";
 import { CloudDownloadOutlined, FileExcelOutlined } from "@ant-design/icons";
 import TextArea from "antd/es/input/TextArea";
 
@@ -10,10 +10,10 @@ const AnotherRoom = () => {
   const [isOpenModal, setIsOpenModal] = useState<boolean>(false);
   const [isSmallModal, setIsSmallModal] = useState<boolean>(false);
 
-  const paths = [
-    { id: 1, title: "Главная", path: "/" },
-    { id: 2, title: "Lorem ipsum dolor", path: "/" },
-  ];
+  // const paths = [
+  //   { id: 1, title: "Главная", path: "/" },
+  //   { id: 2, title: "Lorem ipsum dolor", path: "/" },
+  // ];
 
   const gridStyle: React.CSSProperties = {
     width: "33.33%",
@@ -135,9 +135,7 @@ const AnotherRoom = () => {
               />
             </label>
             <label className="hero-form-modal__label" htmlFor="input2">
-              <h3 className="hero-form-modal__label-name">
-                Lorem ipsum dolor sit
-              </h3>
+              <h3 className="hero-form-modal__label-name">Natija</h3>
               <Input
                 type="text"
                 style={{ padding: "10px" }}
@@ -164,10 +162,10 @@ const AnotherRoom = () => {
         </form>
       </Modal>
       <div className="container">
-        <Breadcrumb paths={paths} className="bread-crumb" />
+        {/* <Breadcrumb paths={paths} className="bread-crumb" /> */}
 
         <div className="hero__box">
-          <h1 className="hero-title">Lorem ipsum dolor</h1>
+          <h1 className="hero-title">Umumiy ma'lumotlar</h1>
 
           <ul className="hero__button-group">
             <li className="hero__button-item">
