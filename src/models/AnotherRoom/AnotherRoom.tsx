@@ -186,15 +186,15 @@ const AnotherRoom = () => {
         <Card className="card">
           <Card.Grid hoverable={false} style={gridStyle}>
             <h2 className="card-title">Bemorlar</h2>
-            <h3 className="card-count">200</h3>
+            <h3 className="card-count">65</h3>
           </Card.Grid>
           <Card.Grid hoverable={false} style={gridStyle}>
             <h2 className="card-title">Palata</h2>
-            <h3 className="card-count">1 470 000</h3>
+            <h3 className="card-count">18</h3>
           </Card.Grid>
           <Card.Grid hoverable={false} style={gridStyle}>
             <h2 className="card-title">Kravat</h2>
-            <h3 className="card-count">2 000 000</h3>
+            <h3 className="card-count">72</h3>
           </Card.Grid>
         </Card>
 
