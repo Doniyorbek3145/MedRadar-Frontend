@@ -2,7 +2,7 @@ import { Card } from "antd";
 import { Breadcrumb, Button } from "components";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 
-const Home = () => {
+const SecondRoom = () => {
   const paths = [
     { id: 1, title: "Главная", path: "/" },
     { id: 2, title: "Lorem ipsum dolor", path: "/" },
@@ -23,13 +23,13 @@ const Home = () => {
           <ul className="hero__button-group">
             <li className="hero__button-item">
               <Button download className="hero__button-group-btn">
-                Lorem ipsum dolor sit amet.
+                Umumiy bemorlar ahvoli
                 <CloudDownloadOutlined className="hero__button-group-icon" />
               </Button>
             </li>
             <li className="hero__button-item">
               <Button download className="hero__button-group-btn">
-                Lorem ipsum dolor sit amet.
+                Sog'lig'ida o'zgarish bo'lgan bemorlar ahvoli
                 <CloudDownloadOutlined className="hero__button-group-icon" />
               </Button>
             </li>
@@ -249,4 +249,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default SecondRoom;

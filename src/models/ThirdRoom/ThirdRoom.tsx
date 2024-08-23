@@ -23,13 +23,13 @@ const Home = () => {
           <ul className="hero__button-group">
             <li className="hero__button-item">
               <Button download className="hero__button-group-btn">
-                Lorem ipsum dolor sit amet.
+                Umumiy bemorlar ahvoli
                 <CloudDownloadOutlined className="hero__button-group-icon" />
               </Button>
             </li>
             <li className="hero__button-item">
               <Button download className="hero__button-group-btn">
-                Lorem ipsum dolor sit amet.
+                Sog'lig'ida o'zgarish bo'lgan bemorlar ahvoli
                 <CloudDownloadOutlined className="hero__button-group-icon" />
               </Button>
             </li>
