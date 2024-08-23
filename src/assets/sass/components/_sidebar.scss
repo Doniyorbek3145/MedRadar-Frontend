@@ -14,11 +14,12 @@
 .sider-icon {
   font-size: 18px;
   color: $site-color;
+  transform: rotate(180deg);
   border-radius: 50%;
 }
 
 .sider-icon-rotate {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .site-layout-sub-header-background {
