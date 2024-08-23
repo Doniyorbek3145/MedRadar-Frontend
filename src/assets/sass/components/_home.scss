@@ -23,4 +23,97 @@
       font-size: 25px;
     }
   }
+
+  &-form-modal {
+    &-textarea {
+      margin-bottom: 40px;
+    }
+
+    &__container {
+      margin-bottom: 40px;
+      @include gridLayout(grid, 2, space-between, center, 25px);
+    }
+
+    &__content {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    &-info {
+      margin-bottom: 12px;
+      @include headingFonts($nurse-color, 28px, 600, 33.4px, none);
+    }
+
+    &-author {
+      @include headingFonts($nurse-color, 14px, 600, 16.7px, none);
+    }
+
+    &-span {
+      color: $auth__login-text-color;
+    }
+
+    &__select {
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+
+    &__label {
+      width: 100%;
+      display: inline-block;
+
+      &-input {
+        width: 100%;
+      }
+
+      &-btn {
+        width: 100%;
+        padding: 20px !important;
+      }
+
+      &-name {
+        margin-bottom: 5px;
+        @include headingFonts(
+          $auth__login-text-color,
+          12px,
+          500,
+          14.56px,
+          none
+        );
+      }
+    }
+  }
+
+  &-small-modal {
+    padding: 50px;
+    text-align: center;
+    &-title {
+      margin-bottom: 45px;
+      @include headingFonts($nurse-color, 28px, 600, 42px, none);
+    }
+
+    &__container {
+      @include flexLayout(flex, space-between, center, 20px, row nowrap);
+      &-btn {
+        width: 100%;
+        padding: 16px;
+        border-radius: 5px;
+        border: 1px solid $site-color;
+        background-color: $site-color;
+        box-shadow: 0px 10px 20px 0px $btn-active-color;
+
+        @include headingFonts(
+          $sidebar__background-color,
+          18px,
+          600,
+          21.47px,
+          none
+        );
+
+        &--active {
+          color: $site-color;
+          background-color: $site__background-color;
+        }
+      }
+    }
+  }
 }

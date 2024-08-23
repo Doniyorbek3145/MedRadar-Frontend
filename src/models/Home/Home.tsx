@@ -1,8 +1,11 @@
 import { Card } from "antd";
+import { useNavigate } from "react-router-dom";
 import { Breadcrumb, Button } from "components";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const paths = [
     { id: 1, title: "Главная", path: "/" },
     { id: 2, title: "Lorem ipsum dolor", path: "/" },
@@ -23,13 +26,13 @@ const Home = () => {
           <ul className="hero__button-group">
             <li className="hero__button-item">
               <Button download className="hero__button-group-btn">
-                Lorem ipsum dolor sit amet.
+                Umumiy bemorlar ahvoli
                 <CloudDownloadOutlined className="hero__button-group-icon" />
               </Button>
             </li>
             <li className="hero__button-item">
               <Button download className="hero__button-group-btn">
-                Lorem ipsum dolor sit amet.
+                Sog'lig'ida o'zgarish bo'lgan bemorlar ahvoli
                 <CloudDownloadOutlined className="hero__button-group-icon" />
               </Button>
             </li>
@@ -82,7 +85,11 @@ const Home = () => {
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      type="button"
+                      className="table__item-btn"
+                      onClick={() => navigate("/pages/another-room/1")}
+                    >
                       Kravat 1
                     </button>
                   </li>

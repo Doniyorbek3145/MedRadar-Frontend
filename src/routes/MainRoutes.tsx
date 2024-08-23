@@ -1,6 +1,12 @@
 import Layout from "Layout";
 import { createBrowserRouter } from "react-router-dom";
-import { Home, Error, SecondRoom, ThirdRoom } from "routes/AppRoutes";
+import {
+  Home,
+  Error,
+  ThirdRoom,
+  SecondRoom,
+  AnotherRoom,
+} from "routes/AppRoutes";
 import { ForgotPassword, Login, EnterPassword, NewPassword } from "models/Auth";
 
 const routes = createBrowserRouter([
@@ -19,6 +25,10 @@ const routes = createBrowserRouter([
       {
         element: <ThirdRoom />,
         path: "/pages/third-room",
+      },
+      {
+        element: <AnotherRoom />,
+        path: "/pages/another-room/:id",
       },
     ],
   },

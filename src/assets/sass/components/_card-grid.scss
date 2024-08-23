@@ -41,3 +41,16 @@
     color: $site-color;
   }
 }
+
+.ant-select-selector {
+  height: none;
+  padding: 5px !important;
+}
+
+.ant-select-arrow {
+  margin-top: -5px !important;
+}
+
+.ant-select-single {
+  height: 42.5px !important;
+}

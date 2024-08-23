@@ -8,6 +8,7 @@ import {
   PieChartOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons";
+import { SiteLogo } from "assets/images/png";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -53,7 +54,13 @@ const Sidebar = () => {
       }
     >
       <div className="logo">
-        <h1 className="site-title">MedRadar</h1>
+        <img
+          src={SiteLogo}
+          alt="site-logo"
+          className="site-logo"
+          width={200}
+          height={200}
+        />
         <h2 className="site-sub-title">Bosh shifokor</h2>
       </div>
       <Menu

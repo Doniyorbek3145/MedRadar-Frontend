@@ -13,9 +13,18 @@
   height: 20px;
 }
 
+.logo{
+  text-align: center;
+}
+
 .header-box {
   gap: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.site-logo {
+  width: 150px;
+  margin: 0 auto 25px auto;
 }
