@@ -66,7 +66,9 @@ const Login = () => {
   };
 
   const onFinish: FormProps<FieldType>["onFinish"] = () => {
-    navigate("/");
+    if (authValue.password === "admin" && authValue.username === "admin") {
+      navigate("/");
+    }
     localStorage.setItem("token", "asdasd");
   };
 
