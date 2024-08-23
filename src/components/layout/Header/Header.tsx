@@ -10,7 +10,7 @@ const HeaderComponent = () => {
       <DataPicker />
       <div className="header-box">
         <Button type="text">
-          <Badge count={2}>
+          <Badge>
             <img
               height={20}
               width={20}
@@ -21,7 +21,7 @@ const HeaderComponent = () => {
           </Badge>
         </Button>
         <Button type="text">
-          <Badge count={6}>
+          <Badge>
             <img
               width={20}
               height={20}
