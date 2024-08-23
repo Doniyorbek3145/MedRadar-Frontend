@@ -7,8 +7,8 @@ const Home = () => {
   const navigate = useNavigate();
 
   const paths = [
-    { id: 1, title: "Главная", path: "/" },
-    { id: 2, title: "Lorem ipsum dolor", path: "/" },
+    { id: 1, title: "Bosh sahifa", path: "/" },
+    { id: 2, title: "Uchinchi sahifa", path: "/" },
   ];
 
   const gridStyle: React.CSSProperties = {
@@ -21,7 +21,7 @@ const Home = () => {
         <Breadcrumb paths={paths} className="bread-crumb" />
 
         <div className="hero__box">
-          <h1 className="hero-title">Lorem ipsum dolor</h1>
+          <h1 className="hero-title">Umumiy ma'lumotlar</h1>
 
           <ul className="hero__button-group">
             <li className="hero__button-item">
