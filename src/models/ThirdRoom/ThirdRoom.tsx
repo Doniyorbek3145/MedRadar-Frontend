@@ -1,8 +1,11 @@
 import { Card } from "antd";
+import { useNavigate } from "react-router-dom";
 import { Breadcrumb, Button } from "components";
 import { CloudDownloadOutlined } from "@ant-design/icons";
 
 const Home = () => {
+  const navigate = useNavigate();
+
   const paths = [
     { id: 1, title: "Главная", path: "/" },
     { id: 2, title: "Lorem ipsum dolor", path: "/" },
@@ -82,77 +85,36 @@ const Home = () => {
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 2
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 3
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 4
-                    </button>
-                  </li>
-                </ul>
-              </td>
-              <td className="table-td">
-                <ul className="table__list">
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 1
-                    </button>
-                  </li>
-                  <li className="table__item">
                     <button
-                      className="table__item-btn table__item-btn--red"
-                      type="button"
-                    >
-                      Kravat 2
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 3
-                    </button>
-                  </li>
-                  <li className="table__item">
-                    <button className="table__item-btn" type="button">
-                      Kravat 4
-                    </button>
-                  </li>
-                </ul>
-              </td>
-              <td className="table-td">
-                <ul className="table__list">
-                  <li className="table__item">
-                    <button
-                      className="table__item-btn table__item-btn--red"
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
                       type="button"
                     >
                       Kravat 1
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 2
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 3
                     </button>
                   </li>
                   <li className="table__item">
                     <button
-                      className="table__item-btn table__item-btn--red"
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
                       type="button"
                     >
                       Kravat 4
@@ -163,22 +125,115 @@ const Home = () => {
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 1
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn table__item-btn--red"
+                      type="button"
+                    >
                       Kravat 2
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 3
                     </button>
                   </li>
                   <li className="table__item">
                     <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
+                      Kravat 4
+                    </button>
+                  </li>
+                </ul>
+              </td>
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn table__item-btn--red"
+                      type="button"
+                    >
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn table__item-btn--red"
+                      type="button"
+                    >
+                      Kravat 4
+                    </button>
+                  </li>
+                </ul>
+              </td>
+              <td className="table-td">
+                <ul className="table__list">
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
+                      Kravat 1
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
+                      Kravat 2
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
+                      Kravat 3
+                    </button>
+                  </li>
+                  <li className="table__item">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
                       type="button"
                       className="table__item-btn table__item-btn--red"
                     >
@@ -190,17 +245,26 @@ const Home = () => {
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 1
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 2
                     </button>
                   </li>
                   <li className="table__item">
                     <button
+                      onClick={() => navigate("/pages/another-room/1")}
                       type="button"
                       className="table__item-btn table__item-btn--red"
                     >
@@ -208,7 +272,11 @@ const Home = () => {
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 4
                     </button>
                   </li>
@@ -217,22 +285,35 @@ const Home = () => {
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 1
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 2
                     </button>
                   </li>
                   <li className="table__item">
-                    <button className="table__item-btn" type="button">
+                    <button
+                      onClick={() => navigate("/pages/another-room/1")}
+                      className="table__item-btn"
+                      type="button"
+                    >
                       Kravat 3
                     </button>
                   </li>
                   <li className="table__item">
                     <button
+                      onClick={() => navigate("/pages/another-room/1")}
                       type="button"
                       className="table__item-btn table__item-btn--red"
                     >

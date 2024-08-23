@@ -79,9 +79,6 @@ const Home = () => {
           </thead>
           <tbody>
             <tr className="table-row">
-              {/* <td>
-                <Checkbox className="table-checkbox" />
-              </td> */}
               <td className="table-td">
                 <ul className="table__list">
                   <li className="table__item">
