@@ -1,11 +1,12 @@
 const { Sider } = Layout;
 import { useState } from "react";
 import { Layout, Menu } from "antd";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 import {
   RightOutlined,
   PieChartOutlined,
+  CalculatorOutlined,
   VideoCameraOutlined,
 } from "@ant-design/icons";
 import { SiteLogo } from "assets/images/png";
@@ -37,6 +38,11 @@ const Sidebar = () => {
       title: "3 - otdeleniya",
       icon: <PieChartOutlined />,
     },
+    {
+      id: "/pages/report",
+      title: "Hisobotlar",
+      icon: <CalculatorOutlined />,
+    },
   ];
 
   return (
@@ -54,13 +60,15 @@ const Sidebar = () => {
       }
     >
       <div className="logo">
-        <img
-          src={SiteLogo}
-          alt="site-logo"
-          className="site-logo"
-          width={200}
-          height={200}
-        />
+        <Link to="/">
+          <img
+            src={SiteLogo}
+            alt="site-logo"
+            className="site-logo"
+            width={200}
+            height={200}
+          />
+        </Link>
         <h2 className="site-sub-title">Bosh shifokor</h2>
       </div>
       <Menu

@@ -2,6 +2,7 @@ import Layout from "Layout";
 import { createBrowserRouter } from "react-router-dom";
 import {
   Home,
+  Report,
   Error,
   ThirdRoom,
   SecondRoom,
@@ -29,6 +30,10 @@ const routes = createBrowserRouter([
       {
         element: <AnotherRoom />,
         path: "/pages/another-room/:id",
+      },
+      {
+        element: <Report />,
+        path: "/pages/report",
       },
     ],
   },

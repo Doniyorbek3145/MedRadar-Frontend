@@ -8,7 +8,7 @@ const DataPickerComponent = () => {
   };
 
   return (
-    <DatePicker value={dayjs("12-08-2021", "DD-MM-YYYY")} onChange={onChange} />
+    <DatePicker value={dayjs(`12-08-2021`, "DD-MM-YYYY")} onChange={onChange} />
   );
 };
 
