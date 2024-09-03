@@ -1,14 +1,18 @@
-import MainRoutes from "routes";
-import { Suspense } from "react";
-import { Loader } from "components";
-import { RouterProvider } from "react-router-dom";
+import { Hamshira, Shifokor, SuperAdmin } from "Models";
 
 const App = () => {
-  return (
-    <Suspense fallback={<Loader />}>
-      <RouterProvider router={MainRoutes} />
-    </Suspense>
-  );
+  type roleTypes = string;
+
+  const role: roleTypes = "Hamshira";
+
+  switch (role) {
+    case "SuperAdmin":
+      return <SuperAdmin />;
+    case "Hamshira":
+      return <Hamshira />;
+    case "Shifokor":
+      return <Shifokor />;
+  }
 };
 
 export default App;
